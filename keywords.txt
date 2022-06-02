@@ -1,0 +1,6 @@
+recvRadarBytes	KEYWORD2
+Situation_judgment	KEYWORD2
+Fall_Detection	KEYWORD2
+ShowData	KEYWORD2
+us_CalculateCrc16	KEYWORD2
+SerialInit	KEYWORD2
