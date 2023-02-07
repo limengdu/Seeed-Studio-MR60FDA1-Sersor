@@ -60,8 +60,10 @@ class FallDetection_60GHz{
         int count = 0;
         int checkdata_len = 2;        //Without cyclic sending, number of frames sent
         void reset_val();
+        void data_printf(const unsigned char* buff, int len);
     public:
         unsigned int sensor_report = 0, bodysign_val = 0, total_detect = 0, height_0005 = 0, height_0510 = 0, height_1015 = 0, height_1520 = 0;
+        FallDetection_60GHz(Stream *s);
         void recvRadarBytes();
         void showData();
         void HumanExis_Func();

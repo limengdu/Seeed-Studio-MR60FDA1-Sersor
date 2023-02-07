@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "60ghzfalldetection.h"
 
-void FallDetection_60GHz::FallDetection_60GHz(Stream *s)
+FallDetection_60GHz::FallDetection_60GHz(Stream *s)
     : stream(s){
   this->newData = false;
 }
@@ -163,6 +163,17 @@ void FallDetection_60GHz::reset_func(){
   stream->write(reset_frame, reset_frame_len);
   stream->flush();
   Serial.println("Radar reset!");
+}
+
+//print redirect
+void FallDetection_60GHz::data_printf(const unsigned char* buff, int len){
+  char charVal[4];
+  for(int i=0; i<len; i++){
+    sprintf(charVal, "%02X", buff[i]);
+    Serial.print(charVal);
+    Serial.print(' ');
+  }
+  Serial.println();
 }
 
 //reset the radar values
