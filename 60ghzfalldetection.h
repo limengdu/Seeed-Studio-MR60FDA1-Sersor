@@ -14,7 +14,7 @@
 #define NOONE_HERE 0x00         //Noone here
 
 #define MOVE_INF 0x02           //Campaign Information
-#define PSE_NONE 0x00           //None
+#define PSE_NONE 0x00           //None 
 #define STATIONARY 0x01         //A person is stationary
 #define MOVEMENT 0x02           //A person in motion
 
@@ -24,9 +24,9 @@
 
 #define FALL_DETECTION 0x83     //Fall data markers
 
-#define FALL_STATE 0x01         //Fall status marker
-#define NO_FALL 0x00            //No falls detected
-#define FALLING 0x01            //Fall detected
+#define FALL_STATE 0x01         //Fall status marker 
+#define NO_FALL 0x00            //No falls detected 
+#define FALL_DOWN 0x01          //Fall detected 
 
 #define RESIDENT_STATE 0x05     //Resident status
 #define NO_RESIDENT 0x00        //No stationary residency
