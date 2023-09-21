@@ -110,9 +110,9 @@ void FallDetection_60GHz::Fall_Detection(){
                 showData();
                 sensor_report = NOFALL;
                 break;
-              case FALLING:
+              case FALL_DOWN: 
                 showData();
-                sensor_report = FALL;
+                sensor_report = FALL; 
                 break;
             }
             break;
