@@ -160,7 +160,7 @@ void FallDetection_60GHz::send_func(const unsigned char* buff, int len, bool cyc
 
 //Reset radar
 void FallDetection_60GHz::reset_func(){
-  stream->write(reset_frame, reset_frame_len);
+  stream->write(fall_reset_frame, reset_frame_len);
   stream->flush();
   Serial.println("Radar reset!");
 }
